@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+
+
+
+<script type="text/javascript">
+    function goFullscreen(id) {
+      var element = document.getElementById(id);       
+      if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+      }  
+    }
+    </script>
+    
+    
+   
+    
+    <video class="video_player" id="player" width="100%"  height="100%" controls="controls" autoplay="autoplay">
+
+        <!-- <source src="Gangubai.mkv" type="video/mkv"/> -->
+        <!-- <source src="Gangubai.ogg" type="video/ogg"/> -->
+        <source src="Abduction.mkv"/>
+        <source src="Abduction.ogg" type="video/ogg"/>
+
+      Your browser does not support the HTML5 video tag.  Use a better browser!
+    </video>
+    <button onclick="goFullscreen('player'); return false">
+      View Fullscreen!
+    </button>
+
+    </html>
